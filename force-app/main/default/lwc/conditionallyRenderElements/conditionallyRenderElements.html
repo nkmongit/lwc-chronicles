@@ -1,11 +1,13 @@
 <template>
     <lightning-card class="title" title="Conditional Rendering Elements" icon-name="utility:user">
-        <div class="slds-m-around_small heading-val">
-            Hello, {myValue}!
-        </div>
-
-        <div class="input-val">
-
+        <div class="checkbox">
+            <lightning-input type="checkbox" label="Click Me!" onchange={handleChange}></lightning-input>
+            <template if:true={showMe}>
+                I'M VISIBLE
+            </template>
+            <template if:false={showMe}>
+                I'M NOT VISIBLE
+            </template>
         </div>
     </lightning-card>
 </template>

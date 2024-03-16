@@ -1,0 +1,12 @@
+<template>
+    <lightning-card class="title" title="Bind HTML element in LWC and update it dynamically" icon-name="utility:user">
+        <div class="slds-m-around_small heading-val">
+            Hello, {myValue}!
+        </div>
+
+        <div class="input-val">
+            <lightning-input label="Dynamic Value" value={myValue} placeholder="Enter value here" onchange={handleChange}>
+            </lightning-input>
+        </div>
+    </lightning-card>
+</template>

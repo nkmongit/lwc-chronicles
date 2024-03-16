@@ -1,0 +1,13 @@
+.title {
+    overflow: hidden;
+    text-wrap: wrap;
+}
+
+.heading-val {
+    font-size: 2rem;
+    font-weight: 400;
+}
+
+.input-val {
+    padding: 10px;
+}
